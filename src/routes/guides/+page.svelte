@@ -1,8 +1,5 @@
 <script>
-    import { Title } from "$lib";
 </script>
-
-<Title title="Guides"/>
 
 <div class="guides">
     <ul>
