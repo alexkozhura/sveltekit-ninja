@@ -1,13 +1,13 @@
 <script>
     // we'll be able to pass the title as a prop
-    let title = "Ninja Gaming";
+    export let title = "Ninja Gaming";
 </script>
 
 <div class="title">
     <img src="/controller.svg" alt="site logo">
     <h1>{title}</h1>
 </div>
-
+  
 <style>
     .title {
         display: flex;
