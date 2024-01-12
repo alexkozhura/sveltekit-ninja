@@ -7,7 +7,7 @@
 </script>
 
 {#if !$isGuidesRoute}
-  <header>
+  <header> 
       <Title title="Ninja Gaming Guides"/>
   </header>
 {/if}
