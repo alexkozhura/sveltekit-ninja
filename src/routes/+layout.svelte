@@ -1,38 +1,39 @@
 <script>
-    import { Title } from "$lib";
-    import { page } from "$app/stores";
-    import { derived } from "svelte/store";
+  import { Title } from "$lib";
+  import { page } from "$app/stores";
+  import { derived } from "svelte/store";
 
-    const isGuidesRoute = derived(page, $page => $page.url.pathname.startsWith("/guides"));
+  const isGuidesRoute = derived(page, $page => $page.url.pathname.startsWith("/guides"));
 </script>
 
 {#if !$isGuidesRoute}
   <header>
-    <Title title="Ninja Gaming Guides"/>
+      <Title title="Ninja Gaming Guides"/>
   </header>
 {/if}
 
-
 <main>
-    <!-- puts the content of the component here  -->
-    <slot />
+  <!-- Content of the component here -->
+  <slot />
 </main>
 
 <footer>
-    <p>Copyright 2022 Ninja Gaming Guides</p>
+  <p>Copyright 2022 Ninja Gaming Guides</p>
 </footer>
 
 <style>
-    @import '../styles/global.css';
-    header {
+  @import '../styles/global.css';
+  header {
       display: flex;
       justify-content: center;
-    }
-    main {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.1); /* Example styling */
+  }
+  main {
       max-width: 960px;
       margin: 20px auto;
-    }
-    footer {
+  }
+  footer {
       text-align: center;
-    }
+  }
 </style>
