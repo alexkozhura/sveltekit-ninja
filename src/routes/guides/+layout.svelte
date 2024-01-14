@@ -23,7 +23,7 @@
     header {
       text-align: center;
       width: 100%;
-      background: rgba(0,0,0,0.1)
+      background: rgba(0,0,0,0.1);
     }
     main {
         max-width: 960px;
@@ -32,13 +32,14 @@
     nav {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-between; /* This will push the title and links to opposite ends */
       width: 100%;
-      margin: 0 auto;
+      padding: 0 1%; /* Adjust the percentage to control the distance from the edges */
     }
     .links {
-      margin-left: auto;
+      margin-right: 5%; 
     }
+    /* Optionally adjust margins for links if needed */
     a {
       margin-left: 10px;
     }

@@ -3,7 +3,8 @@
  </script>
 
 <div class="guide">
-    <h2>{data.props.guide.title}</h2>
+    <h2>{data && data.props.guide ? data.props.guide.title : 'Loading...'}</h2>
+    <p>{data && data.props.guide ? data.props.guide.body: 'Loading...'}</p>
 </div>
 
 <style>

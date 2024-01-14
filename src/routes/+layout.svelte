@@ -12,9 +12,11 @@
   </header>
 {/if}
 
+<slot />
+
 <main>
   <!-- Content of the component here -->
-  <slot />
+  
 </main>
 
 <footer>
